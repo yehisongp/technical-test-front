@@ -64,50 +64,6 @@ export const useAuthStore = defineStore('auth', () => {
     $resetAuth
   }
 
-  // const userData = ref<AuthData>()
-  // const router = useRouter()
-
-  // const setAuth = (data: AuthData) => {
-  //   userData.value = data
-  //   router.push('/')
-  // }
-  // const getToken = () => {
-  //   return userData.value.token
-  // }
-  // const getUser = () => {
-  //   return userData.value.user
-  // }
-
-  // const isAuthenticated = (): Boolean => !!userData.value
-
-  // const getAuth = (): AuthData | false => isAuthenticated() ? { user: getUser(), token: getToken() } : false;
-
-  // const $resetAuth = async () => {
-
-  //   await axios
-  //     .get(`${URL_API}/api/logout`, {
-  //       headers: {
-  //         Authorization: `Bearer ${getToken()}`
-  //       }
-  //     })
-  //     .then((response) => {
-  //       const { status } = response
-  //       if(status === 200){
-  //         router.push('/login')
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.response);
-  //     });
-  // }
-
-  // return {
-  //   setAuth,
-  //   getAuth,
-  //   getToken,
-  //   $resetAuth
-  // }
-
 })
 
 export const useAppStore = defineStore('app', () => {
