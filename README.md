@@ -1,9 +1,9 @@
-# Vue 3 + TypeScript + Vite
+# Manual de instalación
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Requerimientos del sistema
+- Node: v18.17.1
+- NPM: v10.5.0
 
-## Recommended Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+1. <b>Instalación de paquetes de node</b>: <code>npm install</code>
+2. <b>Configuración de URL para consumo de la API</b>: Deberá modificar el archivo <code>definitions.ts</code> que se encuentra en la ruta <code>src/lib/definitions.ts</code> e indicar la URL de su API en la variable <code>URL_API</code>
+3. <b>Ejecutar el servidor</b>: ``npm run dev``
